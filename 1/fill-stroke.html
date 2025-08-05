@@ -1,0 +1,52 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>SVGアイコンのデモ</title>
+    <style>
+        svg {
+            width: 64px;
+            height: 64px;
+        }
+
+        /* 塗りつぶし型の色変更 */
+        .filled-icon {
+            fill: #007bff;
+        }
+
+        /* 線画型の色変更 */
+        .outlined-icon {
+            stroke: #007bff;
+            /* 塗りつぶしを無効化 */
+            fill: none;
+        }
+
+        /* 塗りつぶし型と線画型を組み合わせたアイコン */
+        .combined-icon {
+            fill: #007bff;
+            stroke: #01458d;
+            stroke-width: 2;
+        }
+    </style>
+</head>
+
+<body>
+    <div style="display: flex; align-items: center;">
+        <!-- 塗りつぶし型アイコン（fill） -->
+        <svg viewBox="0 0 24 24" class="filled-icon">
+            <rect x="4" y="4" width="16" height="16" rx="4" ry="4" />
+        </svg>
+
+        <!-- 線画型アイコン（stroke） -->
+        <svg viewBox="0 0 24 24" class="outlined-icon">
+            <rect x="4" y="4" width="16" height="16" rx="4" ry="4" />
+        </svg>
+
+        <!-- 塗りつぶし型と線画型を組み合わせたアイコン -->
+        <svg viewBox="0 0 24 24" class="combined-icon">
+            <rect x="4" y="4" width="16" height="16" rx="4" ry="4" />
+        </svg>
+    </div>
+</body>
+
+</html>
