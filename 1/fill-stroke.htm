@@ -1,0 +1,52 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>SVGアイコンのデモ</title>
+    <style>
+        svg {
+            width: 64px;
+            height: 64px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>rect（四角）</h1>
+    <div style="display: flex; flex-direction: column;">
+        <!-- 塗りつぶし（fill） -->
+        <svg viewBox="0 0 24 24" fill="#007bff">
+            <rect x="4" y="4" width="16" height="16" rx="4" ry="4" />
+        </svg>
+        <!-- 線（stroke） -->
+        <svg viewBox="0 0 24 24" stroke="#007bff" fill="none">
+            <rect x="4" y="4" width="16" height="16" rx="4" ry="4" />
+        </svg>
+        <!-- fill属性とstyle属性のfillを両方を指定した場合 -->
+        <svg viewBox="0 0 24 24" fill="#007bff" style="fill: #dc3545;">
+            <rect x="4" y="4" width="16" height="16" rx="4" ry="4" />
+        </svg>
+        <!-- stroke属性とstyle属性のstrokeを両方を指定した場合 -->
+        <svg viewBox="0 0 24 24" stroke="#007bff" style="stroke: #dc3545; fill: none;">
+            <rect x="4" y="4" width="16" height="16" rx="4" ry="4" />
+        </svg>
+    </div>
+
+    <h1>path（＞の形）</h1>
+    <div style="display: flex; flex-direction: column;">
+        <!-- 線（stroke） -->
+        <svg viewBox="0 0 24 24" stroke="#007bff" fill="none">
+            <path d="M9 5L15 12L9 19" />
+        </svg>
+    </div>
+
+    <h1>fillが未指定の場合</h1>
+    <div style="display: flex; flex-direction: column;">
+        <svg viewBox="0 0 24 24" stroke="#007bff">
+            <path d="M9 5L15 12L9 19" />
+        </svg>
+    </div>
+</body>
+
+</html>
