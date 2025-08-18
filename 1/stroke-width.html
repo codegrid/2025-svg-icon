@@ -1,0 +1,24 @@
+<style>
+.stroke-thin path {
+  fill: none;
+  stroke: #000000;
+  /* 線の太さに1を指定 */
+  stroke-width: 1;
+}
+
+.stroke-bold path {
+  fill: none;
+  stroke: #000000;
+  /* 線の太さに3を指定 */
+  stroke-width: 3;
+}
+</style>
+
+<svg viewBox="0 0 24 24" class="stroke-thin">
+  <path d="M9 5L15 12L9 19"/>
+</svg>
+
+<!-- こちらの線が太くなる -->
+<svg viewBox="0 0 24 24" class="stroke-bold">
+  <path d="M9 5L15 12L9 19"/>
+</svg>
