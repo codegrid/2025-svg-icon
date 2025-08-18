@@ -1,0 +1,44 @@
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>SVGアイコンのデモ</title>
+  <style>
+    body {
+      background-color: #fff;
+    }
+
+    svg {
+      width: 24px;
+      height: 24px;
+      fill: none;
+    }
+
+    /* ライトモード */
+    .icon {
+      stroke: #333;
+    }
+
+    /* ダークモード */
+    @media (prefers-color-scheme: dark) {
+      body {
+        background-color: #333;
+      }
+
+      /* ユーザーがダークテーマを設定している場合はこちらを適用 */
+      .icon {
+        stroke: #fff;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <svg viewBox="0 0 24 24" class="icon">
+    <rect x="4" y="4" width="16" height="16" rx="4" ry="4" />
+  </svg>
+
+</body>
+
+</html>
