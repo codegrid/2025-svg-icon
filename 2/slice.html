@@ -1,0 +1,41 @@
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>デモ</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    h1 {
+      font-size: 16px;
+    }
+
+    .icon {
+      fill: none;
+      stroke: black;
+      /* 違いを確認するための枠線 */
+      border: 1px solid #ddd;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>左に配置して右の余白を切り取り</h1>
+  <svg viewBox="0 0 24 24" width="16" height="24" class="icon" preserveAspectRatio="xMinYMid slice">
+    <path d="M9 5L15 12L9 19" />
+  </svg>
+
+  <h1>中央に配置して左右の余白を切り取り</h1>
+  <svg viewBox="0 0 24 24" width="16" height="24" class="icon" preserveAspectRatio="xMidYMid slice">
+    <path d="M9 5L15 12L9 19" />
+  </svg>
+
+  <h1>右に配置して左の余白を切り取り</h1>
+  <svg viewBox="0 0 24 24" width="16" height="24" class="icon" preserveAspectRatio="xMaxYMid slice">
+    <path d="M9 5L15 12L9 19" />
+  </svg>
+</body>
+
+</html>
