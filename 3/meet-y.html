@@ -1,0 +1,57 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>デモ</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      h1 {
+        font-size: 16px;
+      }
+
+      .icon {
+        fill: none;
+        stroke: black;
+        /* 違いを確認するための枠線 */
+        border: 1px solid #ddd;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>上寄せ（下に余白）</h1>
+    <svg
+      viewBox="0 0 24 24"
+      width="24"
+      height="48"
+      class="icon"
+      preserveAspectRatio="xMidYMin meet"
+    >
+      <path d="M9 5L15 12L9 19" />
+    </svg>
+
+    <h1>中央配置（上下に余白・デフォルト）</h1>
+    <svg
+      viewBox="0 0 24 24"
+      width="24"
+      height="48"
+      class="icon"
+      preserveAspectRatio="xMidYMid meet"
+    >
+      <path d="M9 5L15 12L9 19" />
+    </svg>
+
+    <h1>下寄せ（上に余白）</h1>
+    <svg
+      viewBox="0 0 24 24"
+      width="24"
+      height="48"
+      class="icon"
+      preserveAspectRatio="xMidYMax meet"
+    >
+      <path d="M9 5L15 12L9 19" />
+    </svg>
+  </body>
+</html>
