@@ -1,0 +1,39 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>デモ</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      h1 {
+        font-size: 16px;
+      }
+
+      .icon {
+        fill: none;
+        stroke: black;
+        /* 違いを確認するための枠線 */
+        border: 1px solid #ddd;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>もとのアイコン</h1>
+    <svg viewBox="0 0 24 24" width="24" height="24" class="icon">
+      <path d="M9 5L15 12L9 19" />
+    </svg>
+
+    <h1>viewBoxの幅とwidthを32に変更</h1>
+    <svg viewBox="0 0 32 24" width="32" height="24" class="icon">
+      <path d="M9 5L15 12L9 19" />
+    </svg>
+
+    <h1>widthのみを32に変更</h1>
+    <svg viewBox="0 0 24 24" width="32" height="24" class="icon">
+      <path d="M9 5L15 12L9 19" />
+    </svg>
+  </body>
+</html>
